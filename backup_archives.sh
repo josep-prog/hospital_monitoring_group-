@@ -10,9 +10,8 @@ REMOTE_DIR="/home/"
 # Create the archived logs directory if it doesn't exist
 mkdir -p "$ARCHIVE_DIR"
 
-# Move all archived log files to the designated directory
-# Assuming archived log files have the format heart_rate_log.txt_YYYYMMDD_HHMMSS
-mv heart_rate_log.txt_* "$ARCHIVE_DIR"
+# Move the archived log file to the designated directory
+mv heart_rate_log.txt   "$ARCHIVE_DIR"
 
 # Check if the move was successful
 if [ $? -ne 0 ]; then
@@ -21,7 +20,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # Backup the archived logs to the remote server
-scp -r "$ARCHIVE_DIR/" "$REMOTE_USER@$REMOTE_HOST:$REMOTE_DIR"
+scp -r "$ARCHIVE_DIR/" "ba704bbbf90a.c0bb8d29.alu-cod.online"
 
 # Check if the SCP command was successful
 if [ $? -eq 0 ]; then
