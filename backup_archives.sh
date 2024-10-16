@@ -5,6 +5,9 @@ GROUP_NUMBER="9"  # Your group number
 ARCHIVE_DIR="archived_logs_group9"
 REMOTE_USER="ba704bbbf90a"  # My username
 REMOTE_HOST="ba704bbbf90a.c0bb8d29.alu-cod.online"  # My host
+
+REMOTE_USER="9788c4c8d3a9" # My username
+REMTE_HOST="9788c4c8d3a9.601a9382.alu-cod.online" # My host
 REMOTE_DIR="/home/"
 
 # Create the archived logs directory if it doesn't exist
